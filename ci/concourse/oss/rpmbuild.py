@@ -87,8 +87,8 @@ class RPMPackageBuilder(BasePackageBuilder):
 
     @platform.setter
     def platform(self, value):
-        if value not in ['rhel6', 'rhel7']:
-            raise Exception("The platform only support rhel6, rhel7")
+        if value not in ['rhel6', 'rhel7', 'rhel8']:
+            raise Exception("The platform only support rhel6, rhel7, rhel8")
         self._platform = value
 
     @property
